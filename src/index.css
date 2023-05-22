@@ -1,3 +1,45 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr ) );
+  gap: 30px;
+}
+
+.card-item img {  
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+.fa-heart {
+  cursor: pointer;
+}
+
+.modal-pokemon.active{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;  
+}
+
+.modal-pokemon .card {
+  overflow-y: scroll;
+}
+
+
+.check,
+.check * {
+  border: 1px solid black;
 }
