@@ -34,9 +34,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Refactor awsomebooks project to ES6] <a name="about-project"></a>
+# 📖 [Capstone module 5 JS] <a name="about-project"></a>
 
-**[Refactor awsomebooks project to ES6]** is a practice of responsive Design and JS DOM manipulation as capstone of the first module
+**[Capstone module 5 Js]** is a final project where we show what we have learnt during the last 4 weeks about JS, webpack, ES6, Asyncronuos and APIS
+
+here we are using an external API to save some data from our app
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,16 +47,16 @@
 <details>
   <summary>Front End</summary>
   <ul>
-    <li><a href="https://reactjs.org/">Html</a></li>
+    <li><a href="https://reactjs.org/">webpack</a></li>
   </ul>
   <ul>
-    <li><a href="https://reactjs.org/">JS</a></li>
-  </ul>
-  <ul>
-    <li><a href="https://reactjs.org/">classes</a></li>
+    <li><a href="https://reactjs.org/">APIS</a></li>
   </ul>
   <ul>
     <li><a href="https://reactjs.org/">ES6</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://reactjs.org/">Linters</a></li>
   </ul>
 </details>
 
@@ -62,8 +64,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[only use js classes in diferent modules]**
-- **[DOM manipularion using JS]**
+- **[It uses API methods to work]**
+- **[it uses asyncrouns code]**
 - **[Live demo]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -74,7 +76,7 @@
 
 
 - [Live Demo Link](https://benja27.github.io/CapstoneModule1/)
-- [Loom walkthrought Video](https://www.loom.com/share/efa132271014453bbb17fb462cc95999)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +92,12 @@ https://docs.github.com/en/repositories/creating-and-managing-repositories/cloni
 
 In order to run this project you need:
 
-Clone the repo and open the index.html file located in the root directory
+Clone the repo
+run - npm i
+run - npm run dev
+run - npm run start
+
+a new tab will be open in your browser with the project ready
 <!--
 Example command:
 
@@ -118,7 +125,7 @@ Example commands:
 
 Install this project with:
 
-it does not requiere instalation.
+run - npm install
 
 <!--
 Example command:
@@ -136,40 +143,28 @@ To run the project, execute the following command:
 Download or clone the repo and double click on the index.html file 
 If you want to modify something you can open the folder with your favorite text editor
 I recomend Visual studio code
-<!--
-Example command:
 
-```sh
-  rails server
-```
---->
+run - npm run dev
+run - npm run start
 
 ### Run tests
 
 To run tests, run the following command:
 
-N/A
+run this command: npm run test
 
-<!--
-Example command:
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-Double click on the html file or you can go to the live demo
-<!--
-Example:
+run this command: npm run deploy
 
-```sh
+the project will be automatically deployed on github pages, on your github account.
+for you to do that, you need a github account and you need a copy of this repo on your github account
 
-```
- -->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,15 +179,16 @@ Example:
 - LinkedIn: [LinkedIn](www.linkedin.com/in/mariano-benjamin-mendez-garcia-a50856177)
 
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[It will accept Bitcoin]**
-- [ ] **[It will be conected to internet]**
-- [ ] **[It will do something amazing]**
+- [ ] **[It will have a better interface]**
+- [ ] **[It will hace more pictures from the API]**
+- [ ] **[It will improve the test and we will add more tests]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,7 +218,6 @@ I would like to thank to Microverse for this coding experience
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
 
 <!-- LICENSE -->
