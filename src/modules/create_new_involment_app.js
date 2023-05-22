@@ -1,24 +1,20 @@
 const createApp = () => {
-  let url = "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/"  
-  let config = {
-    method: "POST",
+  const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
+  const config = {
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json"
-    }
-  }
+      'Content-Type': 'application/json',
+    },
+  };
 
-
-  fetch(url,config)
-    .then(Response => Response.text())
-    .then(data => {
-      console.log(data) 
+  fetch(url, config)
+    .then((Response) => Response.text())
+    .then((data) => {
+      console.log(data);
     })
-    .catch (error => {
-      console.log("an error occured: ",error)
-    })
-    
+    .catch((error) => {
+      console.log('an error occured: ', error);
+    });
+};
 
-
-}
-
-export default createApp
+export default createApp;

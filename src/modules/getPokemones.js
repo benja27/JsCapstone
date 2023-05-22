@@ -1,45 +1,42 @@
 const getPokemones = () => {
-  let url = "https://pokeapi.co/api/v2/pokemon/";
+  const url = 'https://pokeapi.co/api/v2/pokemon/';
 
-  let config = {
-    method: "GET",
+  const config = {
+    method: 'GET',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
   };
 
-  let resources = [];
-  let fetchPromises = [];
+  const resources = [];
+  const fetchPromises = [];
 
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 10; i += 1) {
     fetchPromises.push(
-    fetch(`${url}${i}`, config)
-      .then((response) => response.json())
-      .then((data) => {
-        let pokemon = {
-          name: data.name,
-          picture: data.sprites.back_default,
-          id: data.id
-        };
-        resources.push(pokemon);        
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-      )
-    };
-    
-    Promise.all(fetchPromises)
-      .then(() => {
-        // console.log(resources);
-      })
-      .catch((error) => {
-        console.log(error);
-      });      
-    return resources
-    
+      fetch(`${url}${i}`, config)
+        .then((response) => response.json())
+        .then((data) => {
+          const pokemon = {
+            name: data.name,
+            picture: data.sprites.back_default,
+            id: data.id,
+          };
+          resources.push(pokemon);
+        })
+        .catch((error) => {
+          console.log(error);
+        }),
+    );
   }
-    
-    
+
+  Promise.all(fetchPromises)
+    .then(() => {
+      // console.log(resources);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  return resources;
+};
 
 export default getPokemones;

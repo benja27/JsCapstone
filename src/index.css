@@ -6,11 +6,11 @@
 
 .items-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr ) );
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 30px;
 }
 
-.card-item img {  
+.card-item img {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -26,18 +26,17 @@
   cursor: pointer;
 }
 
-.modal-pokemon.active{
+.modal-pokemon.active {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;  
+  bottom: 0;
 }
 
 .modal-pokemon .card {
   overflow-y: scroll;
 }
-
 
 .check,
 .check * {
