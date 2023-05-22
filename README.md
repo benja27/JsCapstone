@@ -75,7 +75,7 @@ here we are using an external API to save some data from our app
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://benja27.github.io/CapstoneModule1/)
+- [Live Demo Link](https://benja27.github.io/JsCapstone/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
