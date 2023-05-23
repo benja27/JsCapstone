@@ -35,10 +35,15 @@ img {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: 0;  
+  overflow-y: scroll;
 }
 
+
+
+
 .modal-pokemon .card {
+  max-height: 80vh;
   overflow-y: scroll;
 }
 
@@ -49,6 +54,7 @@ img {
 
 .button-close-modal {
   position: absolute;
+  top: 30px;
   right: 20px;
   cursor: pointer;
   z-index: 99;
