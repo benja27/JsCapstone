@@ -26,11 +26,11 @@ const showComments = (index, arrayOfPokemons) => {
         <h6>fecha  comment</h6>        
       </div>
       
-      <div class="col-sm-6 d-flex align-items-center" >
-        <form action="" class="d-flex flex-column justify-content-aroun" >
+      <div class="col-sm-6 d-flex align-items-center justify-content-center" >
+        <form action="" class="d-flex flex-column justify-content-around w-100" >
           <div class="mb-3">            
             <h6>Add a comment</h6>
-            <input type="text"
+            <input type="text "
               class="form-control" name="name" id="" aria-describedby="helpId" placeholder="your name">            
           </div>
           <div class="mb-3 flex-grow-1">            
