@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 .items-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
@@ -41,4 +45,18 @@
 .check,
 .check * {
   border: 1px solid black;
+}
+
+.button-close-modal {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.button-close-modal i {
+  width: 30px;
+  height: 30px;
+  font-size: 40px;
+  z-index: 99;
 }

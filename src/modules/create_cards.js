@@ -2,7 +2,7 @@ const createCards = async (cards) => {
   const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/kfs3iIyqcuFTf4F8U0L7/likes/');
   const data = await response.json();
 
-  console.log(cards);
+  // console.log(cards);
   const container = document.querySelector('.items-container');
 
   container.innerHTML = '';
@@ -44,6 +44,7 @@ const createCards = async (cards) => {
       const comments = document.createElement('button');
       comments.setAttribute('type', 'button');
       comments.setAttribute('class', 'btn btn-primary comments-window');
+      comments.setAttribute('data-id', `${item.id}`);
       comments.innerText = 'Comments';
       const reservations = document.createElement('button');
       reservations.setAttribute('type', 'button');

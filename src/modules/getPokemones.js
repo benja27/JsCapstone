@@ -1,6 +1,4 @@
-const getPokemones = () => {
-  const url = 'https://pokeapi.co/api/v2/pokemon/';
-
+const getPokemones = async () => {
   const config = {
     method: 'GET',
     headers: {
@@ -9,33 +7,26 @@ const getPokemones = () => {
   };
 
   const resources = [];
-  const fetchPromises = [];
 
   for (let i = 1; i <= 10; i += 1) {
-    fetchPromises.push(
-      fetch(`${url}${i}`, config)
-        .then((response) => response.json())
-        .then((data) => {
-          const pokemon = {
-            name: data.name,
-            picture: data.sprites.back_default,
-            id: data.id,
-          };
-          resources.push(pokemon);
-        })
-        .catch((error) => {
-          console.log(error);
-        }),
-    );
+    const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+    try {
+      const response = await fetch(url, config);
+      const data = await response.json();
+      const pokemon = {
+        name: data.name,
+        picture: data.sprites.back_default,
+        id: data.id,
+        mov1: data.abilities[0].ability.name,
+        mov2: data.abilities[1].ability.name,
+        height: data.height,
+      };
+      resources.push(pokemon);
+    } catch (error) {
+      console.log(`Error al obtener los datos del Pokémon ${i}:`, error);
+    }
   }
-
-  Promise.all(fetchPromises)
-    .then(() => {
-      // console.log(resources);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  console.log(resources)
   return resources;
 };
 
