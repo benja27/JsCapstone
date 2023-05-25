@@ -26,7 +26,7 @@ const getPokemones = async () => {
       console.log(`Error al obtener los datos del Pokémon ${i}:`, error);
     }
   }
-  console.log(resources)
+  console.log(resources);
   return resources;
 };
 
