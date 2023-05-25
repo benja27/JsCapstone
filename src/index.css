@@ -7,6 +7,11 @@
 img {
   width: 100%;
 }
+.card-body:nth-child(2) {
+  background-image: url('./images/depositphotos_120226648-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg');
+  background-repeat: no repeat;
+  background-size: cover;
+}
 
 .items-container {
   display: grid;
@@ -65,4 +70,19 @@ img {
   height: 30px;
   font-size: 40px;
   z-index: 99;
+}
+.card {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+form {
+  background-color: rgb(222, 222, 222);
+  border-radius: 10px;
+  padding: 20px 5px;
+  margin-left: 10px;
+  
+}
+img {
+  border: 2px solid black;
+  border-radius: 10px;
+  
 }
