@@ -28,3 +28,4 @@ describe('we are going to test if counter is able to count how many comments we 
     expect(commentsCounter(comments)).toBe(0);
   });
 });
+
