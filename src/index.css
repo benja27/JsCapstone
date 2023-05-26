@@ -51,6 +51,14 @@ img {
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
+.card.active {
+  filter: blur(2px);
+}
+
+.modal-pokemon {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .modal-pokemon .card {
   max-height: 80vh;
   overflow-y: scroll;
