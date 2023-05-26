@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-}
 .card-body:nth-child(2) {
   background-image: url('./images/depositphotos_120226648-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg');
   background-repeat: no repeat;
@@ -17,6 +14,12 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 30px;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .card-item img {
@@ -40,12 +43,13 @@ img {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;  
+  bottom: 0;
   overflow-y: scroll;
 }
 
-
-
+.card {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
 
 .modal-pokemon .card {
   max-height: 80vh;
@@ -71,18 +75,10 @@ img {
   font-size: 40px;
   z-index: 99;
 }
-.card {
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-}
+
 form {
   background-color: rgb(222, 222, 222);
   border-radius: 10px;
   padding: 20px 5px;
   margin-left: 10px;
-  
-}
-img {
-  border: 2px solid black;
-  border-radius: 10px;
-  
 }

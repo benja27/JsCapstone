@@ -8,7 +8,7 @@ const createCards = async (cards) => {
   container.innerHTML = '';
 
   setTimeout(() => {
-    for (const item of cards) {
+    cards.forEach((item) => {
       const like = data[item.id - 1].likes;
       const card = document.createElement('div');
       card.setAttribute('class', 'card card-item text-center');
@@ -51,7 +51,7 @@ const createCards = async (cards) => {
       reservations.setAttribute('class', 'btn btn-primary');
       reservations.innerText = 'Reservations';
       buttons.append(comments, reservations);
-    }
+    });
   }, 1000);
 };
 

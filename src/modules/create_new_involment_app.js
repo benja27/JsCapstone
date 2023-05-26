@@ -9,12 +9,8 @@ const createApp = () => {
 
   fetch(url, config)
     .then((Response) => Response.text())
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => {
-      console.log('an error occured: ', error);
-    });
+    .then((data) => data)
+    .catch((error) => error);
 };
 
 export default createApp;
