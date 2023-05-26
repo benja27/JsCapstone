@@ -1,5 +1,4 @@
 import './index.css';
-import html from './index.html';
 import createCards from './modules/create_cards.js';
 import { showComments, closeModal } from './modules/show_comments.js';
 import getPokemones from './modules/getPokemones.js';
@@ -7,7 +6,6 @@ import commentApi from './modules/comment_api.js';
 import likeApi from './modules/like_api.js';
 
 let array = [];
-const involmentAppID = 'hrqIdiXTh94rmLQMrXcG';
 
 document.addEventListener('DOMContentLoaded', async () => {
   array = await getPokemones();

@@ -25,9 +25,9 @@ const commentApi = (e) => {
     const com = document.createElement('h6');
     com.innerText = `${`${actualDate}, ${name}, ${comment}`}`;
     commentBox.appendChild(com);
-    const text = e.target.parentElement.parentElement.parentElement.children[1].children[4].innerText;
-    const count = Number(text.slice(10, text.length - 1));
-    e.target.parentElement.parentElement.parentElement.children[1].children[4].innerText = `${text.slice(0, 10)}${count + 1}${text.slice(text.length - 1)}`;
+    const text = e.target.parentElement.parentElement.parentElement.children[1].children[4];
+    const count = Number(text.innerText.slice(10, text.innerText.length - 1));
+    text.innerText = `${text.slice(0, 10)}${count + 1}${text.innerText.slice(text.innerText.length - 1)}`;
   }
 };
 

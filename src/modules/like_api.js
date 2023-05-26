@@ -10,8 +10,5 @@ const likeApi = (e) => {
       'Content-Type': 'application/json',
     },
   });
-  // const text = e.target.parentElement.children[1].children[0].innerText;
-  // const number = Number(text.slice(0, text.length - 6));
-  // e.target.parentElement.children[1].children[0].innerText = `${number + 1}${text.slice(text.length - 6, text.length)}`;
 };
 export default likeApi;
