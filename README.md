@@ -181,6 +181,9 @@ for you to do that, you need a github account and you need a copy of this repo o
 - Twitter: [@twitterhandle](https://twitter.com/@rksne123)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/mariano-benjamin-mendez-garcia-a50856177)
 
+👤 **Gerson Higgins**
+
+-GitHub: [@githubhandle](https://github.com/gersonhiggins)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

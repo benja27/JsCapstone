@@ -16,9 +16,13 @@ document.querySelector('body').addEventListener('click', (e) => {
   if (e.target.matches('.comments-window')) {
     const index = e.target.dataset.id;
     showComments(index, array);
+    const cardBlur = document.querySelector('.card');
+    cardBlur.classList.add('active');
   }
   if (e.target.matches('.fa-xmark')) {
     closeModal();
+    const cardBlur = document.querySelector('.card');
+    cardBlur.classList.remove('active');
   }
 
   if (e.target.matches('.like')) {

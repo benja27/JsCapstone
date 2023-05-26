@@ -33,6 +33,7 @@ const showComments = async (index, arrayOfPokemons) => {
   pokeImg.setAttribute('alt', '');
   const pokeName = document.createElement('h4');
   pokeName.setAttribute('class', 'text-center');
+  pokeName.innerText = `${arrayOfPokemons[index].name}`;
   const pokeH1 = document.createElement('h6');
   pokeH1.innerText = `Hablity #1:  ${arrayOfPokemons[index].mov1}`;
   const pokeH2 = document.createElement('h6');
