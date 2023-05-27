@@ -75,8 +75,11 @@ here we are using an external API to save some data from our app
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://benja27.github.io/JsCapstone/)
+- [Live Demo Link](https://drive.google.com/file/d/1a-xbc6cp2PF4ptjGFvYW5N9w3yUHYbXg/view?usp=sharing)
 
+## 🚀 Video explaining the project <a name="Zoom video"></a>
+
+- [Live Demo Link](https://benja27.github.io/JsCapstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,6 +181,9 @@ for you to do that, you need a github account and you need a copy of this repo o
 - Twitter: [@twitterhandle](https://twitter.com/@rksne123)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/mariano-benjamin-mendez-garcia-a50856177)
 
+👤 **Gerson Higgins**
+
+-GitHub: [@githubhandle](https://github.com/gersonhiggins)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
